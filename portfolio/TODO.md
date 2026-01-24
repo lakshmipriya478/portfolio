@@ -1,0 +1,5 @@
+- [x] Reduce flip-card height from 220px to 180px in the first .flip-card rule in style.css
+- [x] Reduce contact-icon font-size from 45px to 35px in style.css
+- [x] Adjust .contact-flip-container grid minmax from 200px to 180px in style.css
+- [x] Update mobile flip-card height from 260px to 220px in media query in style.css
+- [x] Change body background color in style.css to linear-gradient(135deg, #667eea, #764ba2)

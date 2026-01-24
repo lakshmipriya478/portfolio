@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - GS Lakshmi Priya</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <nav>
+      <h1 class="logo">GS Lakshmi Priya</h1>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="certifications.html">Certifications</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section class="content" style="display:flex; flex-direction:column; align-items:center; justify-content:center; min-height:80vh;">
+    <h2>Contact Me</h2>
+    <div class="contact-flip-container">
+
+      <!-- Contact Form as Slide-in Panel -->
+      <!--
+        EmailJS Integration Instructions:
+        1. Go to https://www.emailjs.com/ and sign up for a free account.
+        2. Connect your Gmail in EmailJS dashboard (Email Services > Add new service > Gmail).
+        3. Create an email template (Templates > Create New Template). Use variables: name, email, subject, message.
+        4. Get your User ID (Integration > API Keys), Service ID, and Template ID from EmailJS dashboard.
+        5. Replace 'YOUR_USER_ID', 'YOUR_SERVICE_ID', and 'YOUR_TEMPLATE_ID' in the script below with your actual values.
+        6. Save and test your form. Messages will be sent to your Gmail via EmailJS.
+      -->
+      <div id="contact-form-trigger" class="card" style="cursor:pointer;display:flex;flex-direction:column;align-items:center;justify-content:center;min-width:220px;min-height:220px;background:linear-gradient(120deg,#f093fb,#5dc1e6);color:#fff;box-shadow:0px 6px 18px rgba(0,0,0,0.18);border-radius:16px;">
+        <i class="fas fa-paper-plane contact-icon"></i>
+        <h3>Send a Message</h3>
+        <p style="font-size: 0.95em; color: #fff;">Click to fill the form</p>
+      </div>
+      <div id="contact-form-panel" style="position:fixed;top:0;right:-400px;width:370px;max-width:95vw;height:100vh;background:#fff;box-shadow:-4px 0 24px rgba(0,0,0,0.18);z-index:2000;transition:right 0.5s cubic-bezier(.25,.8,.25,1);display:flex;flex-direction:column;align-items:center;justify-content:center;padding:40px 20px 20px 20px;">
+        <button id="close-contact-panel" style="position:absolute;top:18px;right:18px;background:hsl(201, 81%, 73%);color:#fff;border:none;border-radius:50%;width:32px;height:32px;font-size:1.2em;cursor:pointer;"><i class="fas fa-times"></i></button>
+        <form class="contact-form" autocomplete="off" style="width:100%;max-width:320px;">
+          <div id="contact-success" style="display:none;color:#0077b6;font-weight:bold;margin-bottom:10px;"></div>
+          <label for="name"><i class="fas fa-user"></i> Name</label>
+          <input type="text" id="name" name="name" required>
+          <label for="email"><i class="fas fa-envelope"></i> Email</label>
+          <input type="email" id="email" name="email" required>
+          <label for="subject"><i class="fas fa-tag"></i> Subject</label>
+          <input type="text" id="subject" name="subject" required>
+          <label for="message"><i class="fas fa-comment-dots"></i> Message</label>
+          <textarea id="message" name="message" rows="3" required></textarea>
+          <button type="submit" class="btn"><i class="fas fa-paper-plane"></i> Send</button>
+        </form>
+      </div>
+    </div>
+  </section>
+</body>
+<script>
+// Slide-in contact form panel logic
+document.addEventListener('DOMContentLoaded', function() {
+  var trigger = document.getElementById('contact-form-trigger');
+  var panel = document.getElementById('contact-form-panel');
+  var closeBtn = document.getElementById('close-contact-panel');
+  if (trigger && panel && closeBtn) {
+    trigger.addEventListener('click', function() {
+      panel.style.right = '0';
+    });
+    closeBtn.addEventListener('click', function() {
+      panel.style.right = '-400px';
+    });
+  }
+  // Show a custom success message below the form instead of alert
+  var form = panel.querySelector('.contact-form');
+
+  // EmailJS initialization (replace 'YOUR_USER_ID' with your actual User ID)
+  emailjs.init('YOUR_USER_ID');
+
+  // Handle form submission with EmailJS
+  if (form) {
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      var msg = form.querySelector('#contact-success');
+      // Prepare template params
+      var templateParams = {
+        name: form.name.value,
+        email: form.email.value,
+        subject: form.subject.value,
+        message: form.message.value
+      };
+      // Send email via EmailJS (replace 'YOUR_SERVICE_ID' and 'YOUR_TEMPLATE_ID')
+      emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', templateParams)
+        .then(function(response) {
+          if (msg) {
+            msg.textContent = 'Thank you for contacting! Your message has been sent.';
+            msg.style.display = 'block';
+          }
+          form.reset();
+          setTimeout(function() {
+            if (msg) msg.style.display = 'none';
+          }, 4000);
+        }, function(error) {
+          if (msg) {
+            msg.textContent = 'Sorry, there was an error sending your message.';
+            msg.style.display = 'block';
+          }
+        });
+    });
+  }
+});
+</script>
+</html>
