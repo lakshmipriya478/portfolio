@@ -8,6 +8,7 @@ const skillCategories = [
     gradient: "from-primary to-accent",
     skills: [
       { name: "Python", level: 90, icon: "🐍" },
+      { name: "Java", level: 85, icon: "☕" },
       { name: "SQL", level: 85, icon: "🗄️" },
       { name: "HTML", level: 80, icon: "📄" },
       { name: "CSS", level: 75, icon: "🎨" },
@@ -36,12 +37,11 @@ const skillCategories = [
 ];
 
 const softSkills = [
-  { name: "Communication", icon: "💬", color: "from-primary to-accent" },
+  { name: "Strong communication", icon: "💬", color: "from-primary to-accent" },
   { name: "Leadership", icon: "👑", color: "from-secondary to-primary" },
   { name: "Time Management", icon: "⏰", color: "from-accent to-secondary" },
   { name: "Problem-Solving", icon: "🧩", color: "from-success to-primary" },
   { name: "Active Listening", icon: "👂", color: "from-primary to-secondary" },
-  { name: "Teamwork", icon: "🤝", color: "from-accent to-success" },
 ];
 
 const containerVariants = {

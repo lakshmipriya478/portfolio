@@ -22,7 +22,7 @@ const experiences = [
     period: "May 2025 – Jul 2025",
     location: "Bengaluru (Offline)",
     achievements: [
-      "Collected, cleaned, and analyzed datasets of 10,000+ records using Python, SQL, and Excel to support business decision-making.",
+      "Collected, cleaned, and analyzed datasets with over 10,000 records using Python, SQL, and Excel to support business decision-making.",
       "Built Power BI dashboards and automated weekly reports, reducing manual reporting time by 30%.",
     ],
     skills: ["Python", "SQL", "Power BI", "Excel", "Data Analysis"],

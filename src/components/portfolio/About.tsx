@@ -1,4 +1,4 @@
-import { Code, Database, LineChart, Sparkles } from "lucide-react";
+import { Code, Database, BarChart3, Layers } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { motion } from "framer-motion";
 import profilePhoto from "@/assets/profile-photo.jpg";
@@ -7,26 +7,26 @@ import gs1Image from "@/assets/gs1.jpeg";
 const highlights = [
   {
     icon: Code,
-    title: "Full-Stack Development",
-    description: "Building web applications with Django and Python",
+    title: "Programming",
+    description: "Python, Java, SQL, HTML, CSS",
     gradient: "from-primary to-accent",
   },
   {
-    icon: Database,
-    title: "Database Management",
-    description: "SQL, SQLite, and data modeling expertise",
+    icon: Layers,
+    title: "Frameworks/Libraries",
+    description: "Django, Pandas, NumPy, Scikit-learn",
     gradient: "from-secondary to-primary",
   },
   {
-    icon: LineChart,
-    title: "Data Analytics",
-    description: "Transforming data into actionable insights",
+    icon: Database,
+    title: "Tools",
+    description: "Git/GitHub, VS Code, Jupyter, Colab, Power BI, Excel",
     gradient: "from-accent to-secondary",
   },
   {
-    icon: Sparkles,
-    title: "Machine Learning",
-    description: "Building predictive models with Scikit-learn",
+    icon: BarChart3,
+    title: "Soft Skills",
+    description: "Communication, Leadership, Time Management, Problem-Solving",
     gradient: "from-success to-primary",
   },
 ];
