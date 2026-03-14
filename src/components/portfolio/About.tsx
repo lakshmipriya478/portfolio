@@ -164,19 +164,9 @@ export function About() {
               className="text-xl text-muted-foreground leading-relaxed"
               variants={itemVariants}
             >
-              I'm a <span className="text-foreground font-semibold">Software Engineer</span> with 
-              a strong foundation in Python, Django, SQL, and Data Analytics. With hands-on internship 
-              experience at <span className="text-primary font-semibold">Infosys Springboard</span> and{" "}
-              <span className="text-secondary font-semibold">Rooman Technologies</span>, I've developed 
-              full-stack web applications and insightful data dashboards.
-            </motion.p>
-            <motion.p 
-              className="text-xl text-muted-foreground leading-relaxed"
-              variants={itemVariants}
-            >
-              Currently pursuing my <span className="text-foreground font-semibold">B.Tech in Computer Science & 
-              Artificial Intelligence</span> at Vemu Institute of Technology, I'm passionate about building 
-              scalable software solutions that make a real impact.
+              Aspiring Software Engineer with hands-on experience in Python, Java, Django, SQL, and Data Analytics, 
+              with internship experience building full-stack web applications and data dashboards, seeking to contribute to 
+              scalable software solutions in a growth-oriented organization.
             </motion.p>
 
             {/* Highlight Cards */}

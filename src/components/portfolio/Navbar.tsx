@@ -37,46 +37,51 @@ export function Navbar() {
 
   const handleDownloadResume = () => {
     // Create a text file with resume content for download
-    const resumeContent = `GS LAKSHMI PRIYA
-Python Developer & Data Analyst
-
-📞 +91 9381540533
-📧 gslakshmipriya288@gmail.com
-🔗 LinkedIn: linkedin.com/in/gslakshmipriya
-🐱 GitHub: github.com/gslakshmipriya
-
-CAREER OBJECTIVE
-Software Engineer skilled in Python, Django, SQL, and Data Analytics, with internship experience building full-stack web applications and data dashboards.
-
-EXPERIENCE
-Python Django Developer Intern | Infosys Springboard | Feb 2025 – Mar 2025
-• Designed and deployed a Django-based Budget Tracker web application
-• Implemented user authentication and dashboard modules
-
-Data Analyst Intern | Rooman Technologies | May 2025 – Jul 2025
-• Analyzed datasets of 10,000+ records using Python, SQL, and Excel
-• Built Power BI dashboards and automated weekly reports
-
-PROJECTS
-• Budget Tracker App - Django, Python, HTML, CSS
-• Invisibility Cloak - Python, OpenCV, NumPy, Computer Vision
-• Drug Prediction System - Python, ML, Pandas, Scikit-learn
-• Task Manager - Python, Django, HTML, CSS, SQLite
-
-SKILLS
-Programming: Python, SQL, HTML, CSS
-Frameworks: Django, Pandas, NumPy, Scikit-learn
-Tools: Git, GitHub, VS Code, Jupyter, Power BI, MS Excel
-
-EDUCATION
-B.Tech in CS & AI | Vemu Institute of Technology | CGPA: 8.4 | 2022-2026
-
-CERTIFICATIONS
-• Infosys Springboard – Python Foundation
-• NPTEL – Software Engineering, IoT
-• Oracle Cloud Infrastructure
-• Google AI Essentials
-• Rooman Technologies – AI Data Quality Analyst`;
+    const resumeContent = `GS LAKSHMI PRIYA 
++91 9381540533 | gslakshmipriya288@gmail.com | LinkedIn- https://www.linkedin.com/in/gs-lakshmi-priya  
+Github-lakshmipriya478 
+CAREER OBJECTIVE 
+Aspiring Software Engineer with hands-on experience in Python, Java, Django, SQL, and Data Analytics, 
+with internship experience building full-stack web applications and data dashboards, seeking to contribute to 
+scalable software solutions in a growth-oriented organization. 
+EXPERIENCE 
+Python Django Developer Intern | Infosys Springboard | Feb 2025 – Mar 2025 
+• Designed and deployed a Django-based Budget Tracker web application supporting income, expense, 
+and savings tracking for 100+ simulated users. 
+• Implemented user authentication and dashboard modules, improving data accuracy and usability by 
+25%. 
+Data Analyst Intern | Rooman Technologies | May 2025 – Jul 2025 
+• Collected, cleaned, and analyzed datasets with over 10,000 records using Python, SQL, and 
+Excel to support business decision-making. 
+• Built Power BI dashboards and automated weekly reports, reducing manual reporting time by 30%. 
+PROJECTS 
+Budget Tracker App – Django, Python, HTML, CSS 
+• Developed a full-stack Budget Tracker using Django and SQLite with secure authentication and 
+real-time dashboards. 
+• Enabled users to manage monthly budgets and expense history, improving financial tracking efficiency. 
+Task Manager – Python, Django, HTML, CSS, SQLite  
+• Developed a task management application to create, update, and track tasks, improving 
+productivity through an organized and user-friendly interface. 
+TECHNICAL SKILLS 
+• Programming: Python, Java, SQL, HTML, CSS 
+• Frameworks/Libraries: Django, Pandas, NumPy, Scikit-learn 
+• Tools: Git, GitHub, VS Code, Jupyter Notebook, Google Colab, Power BI, MS Excel 
+• Soft Skills: Strong communication | Leadership | Time Management | Problem-Solving | Active 
+Listening 
+EDUCATION 
+• B. Tech – Computer Science & Artificial Intelligence | Vemu Institute of Technology | CGPA: 8.4 | 
+2022–2026 
+• Intermediate (MPC) | Vani Junior College | CGPA: 6.8 | 2020–2022 
+• SSC (10th) | Sathya Vani English Medium High School | CGPA: 10 | 2020 
+CERTIFICATES 
+• Infosys Springboard – Python Foundation 
+• NPTEL – Software Engineering, Introduction to IoT 
+• Oracle – Oracle Cloud Infrastructure 
+• Simplilearn SkillUp – Data Analyst 101, Introduction to Cyber Security 
+• Coursera – Google AI Essentials 
+• Rooman Technologies – AI – Data Quality Analyst 
+• Cognitive Class.ai – Python 101 for Data Science 
+• Wipro talentnext  – Java Full Stack`;
 
     const blob = new Blob([resumeContent], { type: "text/plain" });
     const url = URL.createObjectURL(blob);

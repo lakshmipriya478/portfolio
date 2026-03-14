@@ -20,7 +20,7 @@ const experiences = [
     title: "Data Analyst Intern",
     company: "Rooman Technologies",
     period: "May 2025 – Jul 2025",
-    location: "Remote",
+    location: "Bengaluru (Offline)",
     achievements: [
       "Collected, cleaned, and analyzed datasets of 10,000+ records using Python, SQL, and Excel to support business decision-making.",
       "Built Power BI dashboards and automated weekly reports, reducing manual reporting time by 30%.",

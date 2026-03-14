@@ -100,12 +100,12 @@ export function Hero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4 }}
             >
-              <span className="gradient-text text-glow">GS Lakshmi</span>
+              <span className="gradient-text text-glow">GS LAKSHMI</span>
               <br />
-              <span className="gradient-text text-glow">Priya</span>
+              <span className="gradient-text text-glow">PRIYA</span>
             </motion.h1>
 
-            {/* Title */}
+            {/* Objective */}
             <motion.div 
               className="flex items-center justify-center lg:justify-start gap-4 mb-8"
               initial={{ opacity: 0, y: 20 }}
@@ -114,7 +114,7 @@ export function Hero() {
             >
               <div className="h-1 w-12 gradient-bg rounded-full" />
               <p className="text-xl md:text-2xl font-semibold text-foreground">
-                Python Developer & Data Analyst
+                Aspiring Software Engineer
               </p>
             </motion.div>
 
@@ -125,12 +125,7 @@ export function Hero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.6 }}
             >
-              Software Engineer skilled in{" "}
-              <span className="text-primary font-semibold">Python</span>,{" "}
-              <span className="text-secondary font-semibold">Django</span>,{" "}
-              <span className="text-accent font-semibold">SQL</span>, and{" "}
-              <span className="text-success font-semibold">Data Analytics</span>. 
-              Building scalable solutions with passion and precision.
+              with hands-on experience in Python, Java, Django, SQL, and Data Analytics, with internship experience building full-stack web applications and data dashboards, seeking to contribute to scalable software solutions in a growth-oriented organization.
             </motion.p>
 
             {/* CTA Buttons */}
@@ -165,8 +160,8 @@ export function Hero() {
               transition={{ delay: 0.8 }}
             >
               {[
-                { icon: Linkedin, href: "https://linkedin.com/in/gslakshmipriya", color: "hover:text-secondary" },
-                { icon: Github, href: "https://github.com/gslakshmipriya", color: "hover:text-foreground" },
+                { icon: Linkedin, href: "https://www.linkedin.com/in/gs-lakshmi-priya", color: "hover:text-secondary" },
+                { icon: Github, href: "https://github.com/lakshmipriya478", color: "hover:text-foreground" },
                 { icon: Mail, href: "mailto:gslakshmipriya288@gmail.com", color: "hover:text-accent" },
                 { icon: Phone, href: "tel:+919381540533", color: "hover:text-success" },
               ].map((social, index) => (

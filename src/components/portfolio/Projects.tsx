@@ -6,39 +6,19 @@ import { motion } from "framer-motion";
 
 const projects = [
   {
-    title: "Budget Tracker App",
+    title: "Budget Tracker App – Django, Python, HTML, CSS",
     description:
-      "Developed a full-stack Budget Tracker using Django and SQLite with secure authentication and real-time dashboards. Enabled users to manage monthly budgets and expense history.",
-    technologies: ["Django", "Python", "HTML", "CSS", "SQLite"],
+      "Developed a full-stack Budget Tracker using Django and SQLite with secure authentication and real-time dashboards. Enabled users to manage monthly budgets and expense history, improving financial tracking efficiency.",
+    technologies: ["Django", "Python", "HTML", "CSS"],
     icon: Wallet,
     color: "from-primary to-accent",
     github: "https://github.com/lakshmipriya478/budget-tracker",
     demo: null,
   },
   {
-    title: "Invisibility Cloak",
+    title: "Task Manager – Python, Django, HTML, CSS, SQLite",
     description:
-      "Implemented a real-time computer vision application using OpenCV and HSV masking to create invisibility effects via webcam input. Applied background subtraction and image processing.",
-    technologies: ["Python", "OpenCV", "NumPy", "Computer Vision"],
-    icon: Eye,
-    color: "from-secondary to-primary",
-    github: "https://github.com/lakshmipriya478/invisibility-cloak",
-    demo: null,
-  },
-  {
-    title: "Drug Prediction System",
-    description:
-      "Built a machine learning-based drug prediction system using patient data through preprocessing, feature selection, model training, and evaluation.",
-    technologies: ["Python", "Scikit-learn", "Pandas", "NumPy", "Matplotlib"],
-    icon: Brain,
-    color: "from-accent to-secondary",
-    github: "https://github.com/lakshmipriya478/drug-prediction",
-    demo: null,
-  },
-  {
-    title: "Task Manager",
-    description:
-      "Developed a task management application to create, update, and track tasks with a clean, user-friendly interface.",
+      "Developed a task management application to create, update, and track tasks, improving productivity through an organized and user-friendly interface.",
     technologies: ["Python", "Django", "HTML", "CSS", "SQLite"],
     icon: CheckSquare,
     color: "from-success to-primary",

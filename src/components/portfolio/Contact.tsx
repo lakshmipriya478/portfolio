@@ -25,15 +25,15 @@ const contactInfo = [
   {
     icon: Linkedin,
     label: "LinkedIn",
-    value: "linkedin.com/in/gslakshmipriya",
-    href: "https://linkedin.com/in/gslakshmipriya",
+    value: "linkedin.com/in/gs-lakshmi-priya",
+    href: "https://www.linkedin.com/in/gs-lakshmi-priya",
     gradient: "from-accent to-secondary",
   },
   {
     icon: Github,
     label: "GitHub",
-    value: "github.com/gslakshmipriya",
-    href: "https://github.com/gslakshmipriya",
+    value: "github.com/lakshmipriya478",
+    href: "https://github.com/lakshmipriya478",
     gradient: "from-success to-primary",
   },
 ];
